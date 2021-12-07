@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+    {% block title %}
+         بادوم :)
+    {% endblock %}
+    {% block content %}
+        <div class="container">
+            <div class="flex_center_all">
+                {% if successmsg==1 %}
+                <div class="successMakeMessage">
+        
+               (: بادوم با موفقیت به بادوم ها اضافه شد 
+            </div>
+        
+                {% endif %} 
+                <div class="indexpage_box">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                    <div class="logo">
+                        <a href="/"><img src="../static/images/badoom.svg"></a>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                    <div class="indexpage_slogan">
+                        <h1>بادوم , اعتراف و اشتراک ناشناس</h1>
+                    </div>
+                    </div>
+                </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <a class="showbadoom_button indexpagebtns" href="/show"> بادوم ها </a>
+                        </div> 
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <a class="makebadoom_button indexpagebtns" href="/make"> بادوم جدید </a>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <a class="rulesbadoom_button indexpagebtns" href="/rules"> قوانین و مقررات </a>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <a class="whatsbadoom_button indexpagebtns" href="/whats">  بادوم چیه ؟   </a>
+                        </div>    
+                    </div>
+                    <div class="warnforrules">
+                        <h6>(: لطفا قبل استفاده از بادوم یه بار <a href="/rules">قوانین</a> رو هم بخون , یه دقیقه اس , وقتتو نمیگیره </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endblock %}

@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+{% block title %}
+  بادوم جدید :)
+{% endblock %}
+{% block content %}
+
+<div class="container">
+    <div class="flex_center_all">
+        {% if emptyerror==1 %}
+        <div class="textLengthError">
+
+        ): لطفا طول بادوم خود را به حداقل ۲۰ کارکتر افزایش دهید 
+    </div>
+
+        {% endif %} 
+        <div class="makebadoompage_box">
+            <div class="logo">
+                <a href="/"><img src="../static/images/badoom.svg"></a>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <a class="rulesbadoom_button indexpagebtns" href="rules"> قوانین و مقررات </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <a class="whatsbadoom_button indexpagebtns" href="/whats">  بادوم چیه ؟   </a>
+                </div>    
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <a class="showbadoom_button indexpagebtns" href="/show"> بادوم ها </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <a class="makebadoom_button indexpagebtns" href="/"> بادوم </a>
+                </div> 
+            </div>
+    <form action="makebadoom" method="POST">
+        <textarea placeholder="هرچی میخوای ناشناس اعتراف کن , کسی کاریت نداره :)" class="makebadoom_input" name="badoom_input_text" rows="10"></textarea>
+        <div class="readrulesbox">
+            <a href="/rules">قوانین و مقررات</a> رو مطالعه کردم <input type="checkbox" name="readrules" required>
+        </div>
+        <input class="makebadoom_submitinput" type="submit" value="ثبت بادوم">
+    </form>
+</div>
+
+</div>
+</div>
+
+{% endblock %}

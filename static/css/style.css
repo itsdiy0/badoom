@@ -1,0 +1,210 @@
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/Vazir-Regular.eot');
+    src: url('../fonts/Vazir-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Vazir-Regular.woff2') format('woff2'),
+         url('../fonts/Vazir-Regular.woff') format('woff'),
+         url('../fonts/Vazir-Regular-FD.ttf') format('truetype');
+}
+
+a,h1,h2,h3,h4,h5,h6,li,ul,textarea,input,div,p{
+    font-family: Vazir !important;
+}
+body{
+    background-image: url('../images/bgpattern.jpg');
+    background-repeat: repeat;
+}
+a{
+    text-decoration: none;
+}
+.flex_center_all{
+    display: flex !important;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh - 100px);
+}
+.indexpage_box{
+    background-color: #F4F1DE;
+    padding: 15px;  
+    border-radius: 4px;
+    width: 90%;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.makebadoompage_box{
+    background-color: #F4F1DE;
+    padding: 0 15px 15px 15px;  
+    border-radius: 4px;
+    width: 80%;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.showbadoompage_box{
+    background-color: #F4F1DE;
+    padding: 0 15px 15px 15px;  
+    border-radius: 4px;
+    width: 70%;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.indexpagebtns{
+    display: flex;
+    padding: 15px;
+    font-weight: bold;
+    justify-content: center;
+    font-size: 1.7vh;
+    transition:all .1s ease-in;
+    margin: 0px -15px;
+}
+a.makebadoom_button{
+    background-color: #59C9A5;
+    color:#fff;
+}
+a.makebadoom_button:hover,a.makebadoom_button:focus{
+    background-color: #37A985;
+}
+a.showbadoom_button{
+    background-color: #FB8F67;
+    color:#fff;
+}
+a.showbadoom_button:hover,a.showbadoom_button:focus{
+    background-color:#D85531 ;
+}
+a.whatsbadoom_button{
+    background-color: #2B9EB3;
+    color:#fff;
+}
+a.whatsbadoom_button:hover,a.whatsbadoom_button:focus{
+    background-color: #187795;
+}
+a.rulesbadoom_button{
+    background-color: #EF6F6C;
+    color: #fff;
+}
+a.rulesbadoom_button:hover,a.rulesbadoom_button:focus{
+    background-color: #E93835;
+}
+
+.indexpage_slogan{
+    text-align: center;
+    margin: 10px 0 20px 0;
+    background-color: #3D405B;
+    border-radius: 4px;
+    color: #fff;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.indexpage_slogan>h1{
+    font-weight: bold;
+    line-height: 6vh;
+}
+.warnforrules{
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.5vh;
+    line-height: 4vh;
+    margin: 30px 0 10px 0;
+}
+.warnforrules>h6{
+    color: #3D405B;
+}
+textarea.makebadoom_input{
+    border: 0px solid #eee;
+    width: 100%;
+    border-radius: 4px;
+    direction: rtl;
+    padding: 15px;
+    margin:20px 0 10px 0;
+    font-size: 1.8vh;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+input.makebadoom_submitinput{
+    width: 100%;
+    border: 0px solid #eee;
+    border-radius: 4px;
+    padding: 7px 0;
+    font-size: 2vh;
+    color: #fff;
+    transition:all .1s ease-in;
+    background-color: #3D405B;
+    font-weight: bold;
+}
+input.makebadoom_submitinput:hover,input.makebadoom_submitinput:focus{
+    background-color: #27293b;
+}
+input.likebutton{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    width: 100%;
+    padding: 15px;
+    background-color: #00b16a;
+    border: 0px solid;
+    font-weight: bold;
+    font-size: 2vh;
+    border-radius: 4px;
+}
+input.dislikebutton{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    width: 100%;
+    padding: 15px;
+    border: 0px solid;
+    background-color: #f22613;
+    font-weight: bold;
+    font-size: 2vh;
+    border-radius: 4px;
+
+}
+.badoomtextbox{
+    padding: 15px;
+    border-radius: 4px;
+    direction: rtl;
+    background-color: #fff;
+    margin: 15px 0;
+    font-size: 1.8vh;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    line-height: 4vh;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+}
+.logo>a>img{
+    width: 100%;
+    height: 13vh;
+}
+
+.successMakeMessage{
+    width: 90%;
+    background-color: #03c9a9;
+    padding: 15px;
+    text-align: center;
+    border-radius: 4px;
+    color: #fff;
+    margin: 10px 0;
+    font-size: 1.7vh;
+    font-weight: bold;
+}
+.textLengthError{
+    width: 80%;
+    background-color: #f39c12;
+    padding: 15px;
+    text-align: center;
+    border-radius: 4px;
+    color: #fff;
+    margin: 10px 0;
+    font-size: 1.7vh;
+    font-weight: bold;
+}
+.readrulesbox{
+    direction: rtl;
+    margin-bottom: 10px;
+}
+.readrulesbox>a,.warnforrules>h6>a,.badoomtextbox>p>a{
+    color: #59C9A5;
+    font-weight: bold;
+}
+.ccinfo{
+    text-align: center;
+    font-size: 1.5vh;
+}

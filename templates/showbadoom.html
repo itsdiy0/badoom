@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+{% block title %}
+{{ badoom['badoom_pvkeycode'] }}
+{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="flex_center_all">
+        
+        <div class="showbadoompage_box">
+            <div class="logo">
+                <a href="/"><img src="../static/images/badoom.svg"></a>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <a class="rulesbadoom_button indexpagebtns " href="/rules"> قوانین و مقررات </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <a class="whatsbadoom_button indexpagebtns" href="/whats">  بادوم چیه ؟   </a>
+                </div>    
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <a class="showbadoom_button indexpagebtns" href="/make"> بادوم جدید </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <a class="makebadoom_button indexpagebtns" href="/"> بادوم </a>
+                </div> 
+            </div>
+    <form method="POST" action="/show">
+        <textarea name="pvkeycode" id="" hidden>{{ badoom['badoom_pvkeycode'] }}</textarea>
+        <!-- Badooms Meta Score : {{ bms }} -->
+        <div class="badoomtextbox">
+        <p>
+        {{ badoom['badoom_text'] }}
+    </p>
+</div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <input type="submit" class="dislikebutton hvr-buzz" name="badoom_input_dislike" value="({{ badoom['badoom_dislikes'] }}) تلخ ">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <input type="submit" class="likebutton hvr-buzz" name="badoom_input_like" value="({{ badoom['badoom_likes'] }}) شیرین">
+        </div>
+
+    </div>
+    </form>
+</div>
+</div>
+</div>
+
+{% endblock %}
